@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6;
+  }
+  
+  .btn {
+    @apply font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-purple-600 hover:bg-purple-700 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800;
+  }
+}
