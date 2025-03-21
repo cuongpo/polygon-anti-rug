@@ -2,6 +2,12 @@
 
 A web application to analyze Polygon smart contracts for potential rug pull risks.
 
+## Live Demo
+
+[**Try the live application here**](https://polygon-anti-rug.onrender.com/)
+
+![Application Screenshot](screenshot.png)
+
 ## Features
 
 - Input any Polygon contract address for analysis
