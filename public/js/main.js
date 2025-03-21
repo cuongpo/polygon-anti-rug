@@ -322,7 +322,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         Detailed Analysis
                     </h3>
                     <div class="prose dark:prose-invert max-w-none markdown-content">
-                        ${marked.parse(data.analysis)}
+                        ${marked.parse(data.analysis.replace(/Contract Address:.*$/gm, match => `<span class="font-semibold text-purple-600 dark:text-purple-300">${match}</span>`).replace(/Implementation Address:.*$/gm, match => `<span class="font-semibold text-purple-600 dark:text-purple-300">${match}</span>`))}
                     </div>
                 </div>
             `;
